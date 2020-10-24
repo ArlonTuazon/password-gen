@@ -4,90 +4,41 @@
 /* Start of the Form Style*/
 body {
     background-color: whitesmoke;
-    color: #fff;
+    color: pink;
     display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-direction: column;
-    /*align-items: center;
-    justify-content: center;*/
+    align-items: center;
+    justify-content: center;
     padding: 50px;
     min-height: 100vh;
 }
-
-p {
-    margin: 5px 0;
-}
-
-h2 {
-    margin: 10px 0 20px;
-    text-align: center;
-}
-
-input[type=checkbox] {
-    margin-right: 0;
-}
-
-.container {
-    background-color: pink;
-    /*box-shadow: 0px 2px 10px rgba(209, 111, 157, 0.2);*/
-    padding: 30px;
-    width: 350px;
-    max-width: 100%;
-    height: 550px;
-}
-
-.result-container {
-    background-color: rgba(206, 53, 155, 0.4);
+.result-box {
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    margin-top: 50px;
     font-size: 18px;
     letter-spacing: 1px;
-    padding: 20px 20px;
+    padding: 12px 10px;
     height: 50px;
-    width: 100%;
+    width: 50%;
 }
-
-.result-container #result {
-    word-wrap: break-word;
-    max-width: calc(100% - 40px);
-}
-
-.result-container .btn {
-    font-size: 20px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    height: 40px;
-    width: 40px;
-}
-
-.btn {
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 8px 12px;
-    background-color: #3B3B98;
-}
-
-.btn-gen {
-    display: block;
-    width: 100%;
-}
-
-.option {
-    display: flex;
-    justify-content: space-between;
+textarea {
     align-items: center;
-    margin: 15px 0;
+    border: solid 1px gray;
+    margin: 20px 50px;
+    padding: 10px 30px;
+    
+    width: 80%;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    color: #696969;
+    font-size: 18px;
 }
 
-/* Adjusting to Media screen  */
-@media screen and (max-width: 400px) {
-    .result-container {
-        font-size: 14px;
-    }
+.btn-large {
+    display: block;
+    width: 50%;
 }
