@@ -29,25 +29,25 @@ function generatePassword() {
          pwLength = prompt("You must choose between 8 and 128");     
       }
       else {
-          lowerval= confirm ("Do you want with a Lowercase Letter?");
-          supperval = confirm ("Do you want with an Uppercase Letter?");
-          numberval = confirm ("Do you want with Numbers?");
-          hassymbolval = confirm ("Do you want with Symbols?");
+          var haslowerval= confirm ("Do you want with a Lowercase Letter?");
+          var hasupperval = confirm ("Do you want with an Uppercase Letter?");
+          var hasnumberval = confirm ("Do you want with Numbers?");
+          var hassymbolval = confirm ("Do you want with Symbols?");
       };
 
-      if (lowerval){
-          passwordCharacters +=lowerval;
+      if (haslowerval){
+          passwordCharacters += lowerval;
          
       }
-      if (upperval) {
+      if (hasupperval) {
           passwordCharacters += upperval;
           
       }
-      if (numberval){
+      if (hasnumberval){
           passwordCharacters += numberval;
           
       }
-      if (symbolval) {
+      if (hassymbolval) {
           passwordCharacters += symbolval;
          
       }
@@ -62,21 +62,4 @@ function generatePassword() {
 }
    generateBtn.addEventListener("click", writePassword);
 
-//Function for Generator
-  
-//function getLowerval () {
-   // return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-    
-//}
-
-//function getUpperval () {
-    //return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-//}
-//function getNumberval () {
-  //  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-////}
-//function getSymbolval () {
- //   var symbols = '!@#$%^&*(){}=<>/';
-  //  return symbols[Math.floor(Math.random() * symbols.length)];
-//}
 
