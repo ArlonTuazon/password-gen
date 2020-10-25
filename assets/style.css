@@ -26,19 +26,15 @@ body {
     width: 50%;
 }
 textarea {
-    align-items: center;
-    border: solid 1px gray;
-    margin: 20px 50px;
-    padding: 10px 30px;
-    
-    width: 80%;
-    font-family: "Lucida Console", Monaco, monospace;
-    text-align: center;
-    color: #696969;
-    font-size: 18px;
+margin-right: 70px;
+margin-left: 150px;
+padding-right: 100px;
+padding-left: 50px;
+
 }
 
 .btn-large {
     display: block;
     width: 50%;
+    color: red
 }
