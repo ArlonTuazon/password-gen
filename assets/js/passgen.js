@@ -1,13 +1,12 @@
 //Start declaring variables
 var generateBtn = document.querySelector("#generate");
 
-var pwLength;
-var Lowerval;
-var Upperval;
-var Numberval;
-var Symbolval;    
+var pwLength="";
+var lowerval= "abcdefghijklmnopqrstuvwxyz";
+var upperval= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numberval= "0123456789";
+var symbolval= "!@#$%^&*()_|}{[]:;?><,./-=+~`";    
 
-var inputVal = true;
 
 //password input here
 
@@ -30,27 +29,27 @@ function generatePassword() {
          pwLength = prompt("You must choose between 8 and 128");     
       }
       else {
-          Lowerval= confirm ("Do you want with a Lowercase Letter?");
-          Upperval = confirm ("Do you want with an Uppercase Letter?");
-          Numberval = confirm ("Do you want with Numbers?");
-          Symbolval = confirm ("Do you want with Symbols?");
+          lowerval= confirm ("Do you want with a Lowercase Letter?");
+          supperval = confirm ("Do you want with an Uppercase Letter?");
+          numberval = confirm ("Do you want with Numbers?");
+          hassymbolval = confirm ("Do you want with Symbols?");
       };
 
-      if (Lowerval){
-          getLowerval();
-          console.log (getLowerval());
+      if (lowerval){
+          passwordCharacters +=lowerval;
+         
       }
-      if (Upperval) {
-          getUpperval();
-          console.log (getUpperval());
+      if (upperval) {
+          passwordCharacters += upperval;
+          
       }
-      if (Numberval){
-          getNumberval();
-          console.log (getNumberval());
+      if (numberval){
+          passwordCharacters += numberval;
+          
       }
-      if (Symbolval) {
-          getSymbolval();
-          console.log (getSymbolval());
+      if (symbolval) {
+          passwordCharacters += symbolval;
+         
       }
       else 
            alert("You must choose a criteria!");
@@ -65,19 +64,19 @@ function generatePassword() {
 
 //Function for Generator
   
-function getLowerval () {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+//function getLowerval () {
+   // return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
     
-}
+//}
 
-function getUpperval () {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
-function getNumberval () {
-    return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-}
-function getSymbolval () {
-    var symbols = '!@#$%^&*(){}=<>/';
-    return symbols[Math.floor(Math.random() * symbols.length)];
-}
+//function getUpperval () {
+    //return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+//}
+//function getNumberval () {
+  //  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+////}
+//function getSymbolval () {
+ //   var symbols = '!@#$%^&*(){}=<>/';
+  //  return symbols[Math.floor(Math.random() * symbols.length)];
+//}
 

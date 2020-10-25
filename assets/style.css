@@ -13,6 +13,7 @@ body {
     padding: 50px;
     min-height: 100vh;
 }
+/*result box styles*/
 .result-box {
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
