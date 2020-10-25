@@ -17,12 +17,11 @@ function writePassword() {
 
     passwordText.value = password;
 }
+// Generate password function
 function generatePassword() {
     userPassword = "";
     passwordCharacters = "";
 
-// Generate password function
-function generatePassword() {
     pwLength = prompt("Enter Length of Password Length. Should be between 8 and 128 only.");
      if (!pwLength) {
          alert ("Please enter a number");
@@ -37,31 +36,32 @@ function generatePassword() {
           Symbolval = confirm ("Do you want with Symbols?");
       };
 
-      if (!Lowerval && !Upperval && !Numberval && !Symbolval) {
-        inputVal = alert("You must choose a criteria!");
-
-    }
-      else if (inputVal == true) {
-        getLowerval ();
-        getUpperval();
-        getSymbolval;
-        getNumberval();
-        
+      if (Lowerval){
+          getLowerval();
+          console.log (getLowerval());
       }
-    var password = [];
-    for (var i = 0; i < pwLength; i++) {
-        var pickChoices = inputVal[Math.floor(Math.random() * inputVal.length)];
-        password.push(pickChoices);
-    }
-    //var pw = password.join("");
-    //UserInput(pw);
-    //return pw;
+      if (Upperval) {
+          getUpperval();
+          console.log (getUpperval());
+      }
+      if (Numberval){
+          getNumberval();
+          console.log (getNumberval());
+      }
+      if (Symbolval) {
+          getSymbolval();
+          console.log (getSymbolval());
+      }
+      else 
+           alert("You must choose a criteria!");
+      for (var i = 0; i < pwLength; i++) {
+        userPassword += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+      }
+    // console.log(userPassword);
+    return userPassword;
+      
 }
-function UserInput(pw) {
-     document.getElementById('result').innerHTML = pw;
-}
-
-
+   generateBtn.addEventListener("click", writePassword);
 
 //Function for Generator
   
