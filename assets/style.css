@@ -22,26 +22,39 @@ body {
     position: relative;
     font-size: 18px;
     letter-spacing: 1px;
-    padding: 12px 10px;
+    padding: 90px 20px;
     height: 50px;
     width: 50%;
 }
 textarea {
-display: block;
-margin-right: 70px;
-margin-left: 150px;
-padding-right: 100px;
-padding-left: 50px;
-text-align: center;
-resize: none;
-overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
 
 }
 
 .btn-large {
     display: block;
-    width: 50%;
-    color: red
+    width: 30%;
+    padding: 50px;
+    color:blue;
+    font-size: medium;
+    background: pink;
 }
 /* Media queries styles*/
 @media (max-width: 690px) {
@@ -63,10 +76,5 @@ overflow: hidden;
     .btn-large {
       font-size: 0.8rem;
     }
-    textarea{
-       font-size: 1rem;
-       text-align: center;
-      display: inline;
-      margin: 10px;
-  }
+   
 }
